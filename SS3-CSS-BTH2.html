@@ -1,16 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Sử dụng Box model</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Title</title>
 </head>
 <body>
-<div>
-    <p>Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML. Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
-    <p>Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML. Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
-    <p>Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
-        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+<style>
+    #container {
+        width: 50%;
+        height: auto;
+        background-color: red;
+        text-align: center;
+
+    }
+
+    #child {
+        width:90%;
+        background-color: white;
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+    }
+    table {
+        width:100%;
+        padding:50px;
+        margin: 0 auto;
+
+    }
+    caption{
+        color: white;
+        background-color: aquamarine;
+        font-size: 20px;
+    }
+</style>
+<div id="container">
+    <div id="child">
+        <table border="1px">
+            <tr>
+                <td colspan="4"><h1 style="background-color: #8ebf42">SỞ THÍCH CỦA BẠN</h1></td>
+
+            </tr>
+            <tr>
+                <td><p>Họ Và Tên</p></td>
+                <td><input type="text"></td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td><p>Email</p></td>
+                <td><input type="email"></td>
+                 <td></td>
+                 <td></td>
+            </tr>
+            <tr>
+                <td>Sở Thích</td>
+                <td><input type="checkbox">Thể Thao</td>
+                <td><input type="checkbox">Thể Thao</td>
+                <td><input type="checkbox">Thể Thao</td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td><input type="checkbox">Thể Thao</td>
+                <td><input type="checkbox">Thể Thao</td>
+                <td><input type="checkbox">Thể Thao</td>
+            </tr>
+            <tr><td><input type="checkbox">Thể Thao</td></tr>
+        </table>
+    </div>
 </div>
+
 </body>
 </html>
